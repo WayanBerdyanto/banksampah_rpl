@@ -30,8 +30,8 @@
             </div>
 
             <div class="mt-4">
-                <x-label for="no_telp" value="{{ __('No Telp') }}" />
-                <x-input id="no_telp" class="block mt-1 w-full" type="text" name="no_telp" required autocomplete="new-password" />
+                <x-label for="no_telpon" value="{{ __('No Telp') }}" />
+                <x-input id="no_telpon" class="block mt-1 w-full" type="text" name="no_telpon" />
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
