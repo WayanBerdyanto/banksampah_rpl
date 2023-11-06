@@ -20,6 +20,14 @@ return new class extends Migration
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
+            $table->enum('role',['pengguna', 'pengambil', 'banksampah'])->default('pengguna');
+            $table->string('provinsi', 50)->nullable();
+            $table->string('kabupaten', 50)->nullable();
+            $table->string('kecamatan', 50)->nullable();
+            $table->string('kelurahan', 50)->nullable();
+            $table->string('no_telpon', 15);
+            $table->string('latitude', 40)->nullable();
+            $table->string('longitude', 40)->nullable();
             $table->timestamps();
         });
     }
